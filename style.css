@@ -1,0 +1,75 @@
+
+		@keyframes waterfall {
+			from {
+				background-position: 84px -2660px, 426px -1080px, 730px -3240px, 872px -2160px, 95% -1350px, 0 0;
+			} to {
+				background-position: 84px 1660px, 426px 3240px, 730px 1080px, 872px 2160px, 95% 2970px, 0 1460px;
+			}
+		}
+
+		#fact {
+			display: none;
+		}
+		html {background: #111 url(bg01.png) 0 0 repeat;
+			background:
+				url(bg03b.png) 84px -1080px no-repeat,
+				url(bg01b.png) 426px -1080px no-repeat,
+				url(bg02b.png) 730px -1080px no-repeat,
+				url(bg03b.png) 872px -1080px no-repeat,
+				url(bg02b.png) 95% -1080px no-repeat,
+				url(bg00.jpg) 0 0 repeat;
+			background-color: #111;
+			animation: waterfall 10s linear infinite;
+		}
+		body {
+           
+			margin: 0 0 0 0;
+			padding: 3em 25px 5em;
+			border: 1px solid rgba(128,255,128,0.25);
+			border-width: 0 5px 5px;
+			color: rgba(67%,100%,67%,0.33);
+			background: rgba(0,0,0,0.85);
+			text-shadow: 0 0 3px #000;
+			font: 0.9em sans-serif;
+		}
+		h1 {
+			text-transform: uppercase;
+			color: rgb(210,246,218);
+			text-align: center;
+			text-shadow: 1px 5px 25px rgba(0,255,0,0.5), 1px -5px 15px rgba(0,255,0,0.5);
+			padding-bottom: 0.25em;
+			margin: 0;
+			-webkit-animation: shake 2.5s infinite linear alternate;
+
+		}
+		h1 + p {
+			text-align: center;
+			margin: 0.75em 0 2em;
+			font-size: 1.15em;
+			text-shadow: 1px 0 15px rgba(0,255,0,0.5);
+		}
+		a {
+			color: rgba(0,255,0,0.5);
+		}
+        button {
+			border-radius: 100px;
+			border-width: 0;
+			padding: 0.5em 1em;
+			color: #FFF;
+			text-shadow: 0 0 4px #000, 1px 1px 1px #000;
+		} 
+        #run-it {
+			background-color: rgba(255,0,0,1);
+			background: rgba(255,0,0,1) -moz-linear-gradient(top, rgba(255,255,255,0.5), rgba(0,0,0,0.5));
+			background: rgba(255,0,0,1) -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255,255,255,0.5)), to(rgba(0,0,0,0.5)));
+			background: rgba(255,0,0,1) -webkit-linear-gradient(top, rgba(255,255,255,0.5), rgba(0,0,0,0.5));
+			background: rgba(255,0,0,1) linear-gradient(top, rgba(255,255,255,0.5), rgba(0,0,0,0.5));
+		}
+		#reset-it {
+			background-color: rgba(51,51,255,1);
+			background: rgba(51,51,255,1) -moz-linear-gradient(top, rgba(255,255,255,0.5), rgba(0,0,0,0.5));
+			background: rgba(51,51,255,1) -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255,255,255,0.5)), to(rgba(0,0,0,0.5)));
+			background: rgba(51,51,255,1) -webkit-linear-gradient(top, rgba(255,255,255,0.5), rgba(0,0,0,0.5));
+			background: rgba(51,51,255,1) linear-gradient(top, rgba(255,255,255,0.5), rgba(0,0,0,0.5));
+		}
+		
